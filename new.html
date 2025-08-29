@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{margin: 0;
+        padding: 0;}
+         body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            border: 2px solid rgb(0, 0, 0);
+            width: 700px;
+            /* height: 350px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-direction: column;
+             border-radius: 4px;
+        }
+        .acc{
+         background-color: gainsboro;
+         border-radius: 4px;
+         padding: 10px;
+         height: 2rem;
+         overflow: hidden;
+         transition: all .4s linear;
+        }
+        .heading{
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        i{
+            cursor: pointer;
+        }
+        .acc-show{
+            /* transition: all .4s linear; */
+            height: 6rem;
+        }
+        .rotate{
+            transform: rotate(180deg);
+            transition: all .3s linear;
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="acc">
+            <div class="heading">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <i onclick="Acc(event)" class="fa-solid fa-caret-down"></i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quis. Recusandae, rerum dolorum! Cum pariatur labore consequuntur esse sunt id? Architecto nemo harum, odit maxime voluptas aliquid ad nisi velit!</p>
+        </div>
+
+        
+        <div class="acc">
+            <div class="heading">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <i onclick="Acc(event)" class="fa-solid fa-caret-down"></i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolorem earum, quia placeat et sint mollitia, odit sapiente quas, illo velit. Temporibus similique neque consequatur. Placeat vel similique fugiat ullam!</p>
+        </div>
+
+        
+        <div class="acc">
+            <div class="heading">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <i onclick="Acc(event)" class="fa-solid fa-caret-down"></i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quis. Recusandae, rerum dolorum! Cum pariatur labore consequuntur esse sunt id? Architecto nemo harum, odit maxime voluptas aliquid ad nisi velit!</p>
+        </div>
+
+           <div class="acc">
+            <div class="heading">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <i onclick="Acc(event)" class="fa-solid fa-caret-down"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et nam dignissimos ea ex quisquam placeat deleniti nesciunt. Dolore quod placeat voluptates numquam id, sequi corporis? Nostrum maiores quis vero harum iusto voluptas odio id delectus a aliquid rem assumenda atque impedit voluptates, cupiditate, ab exercitationem facilis, nam libero distinctio?/p>
+        </div>
+
+           <div class="acc">
+            <div class="heading">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <i onclick="Acc(event)" class="fa-solid fa-caret-down"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et nam dignissimos ea ex quisquam placeat deleniti nesciunt. Dolore quod placeat voluptates numquam id, sequi corporis? Nostrum maiores quis vero harum iusto voluptas odio id delectus a aliquid rem assumenda atque impedit voluptates, cupiditate, ab exercitationem facilis, nam libero distinctio?/p>
+        </div>
+        
+           <div class="acc">
+            <div class="heading">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <i onclick="Acc(event)" class="fa-solid fa-caret-down"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et nam dignissimos ea ex quisquam placeat deleniti nesciunt. Dolore quod placeat voluptates numquam id, sequi corporis? Nostrum maiores quis vero harum iusto voluptas odio id delectus a aliquid rem assumenda atque impedit voluptates, cupiditate, ab exercitationem facilis, nam libero distinctio?/p>
+        </div>
+    </div>
+    <script>
+       function Acc(e){
+            e.target.parentElement.parentElement.classList.toggle("acc-show")
+            e.target.classList.toggle("rotate")
+
+        }
+    </script>
+</body>
+</html>
